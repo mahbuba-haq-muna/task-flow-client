@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Home from './Pages/Home/Home';
+import Pending from './Pages/Pending/Pending';
 import Main from './Components/Layout/Main';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+            path: '/dashboard',
+            element: <Pending></Pending>
         },
       ]
   },
