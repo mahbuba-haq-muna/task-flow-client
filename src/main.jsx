@@ -7,6 +7,7 @@ import {
 import './index.css'
 import Home from './Pages/Home/Home';
 import Pending from './Pages/Pending/Pending';
+import Ongoing from './Pages/OnGoing/OnGoing';
 import Main from './Components/Layout/Main';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 
@@ -19,6 +20,14 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+            path: '/dashboard',
+            element: <Pending></Pending>
+        },
+        {
+            path: '/dashboard/ongoing',
+            element: <Ongoing></Ongoing>
         },
         {
             path: '/dashboard',
