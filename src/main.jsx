@@ -10,6 +10,7 @@ import Pending from './Pages/Pending/Pending';
 import Ongoing from './Pages/OnGoing/OnGoing';
 import Main from './Components/Layout/Main';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
+import Complete from './Pages/Complete/Complete';
 
 const router = createBrowserRouter([
   {
@@ -30,8 +31,8 @@ const router = createBrowserRouter([
             element: <Ongoing></Ongoing>
         },
         {
-            path: '/dashboard',
-            element: <Pending></Pending>
+            path: '/dashboard/complete',
+            element: <Complete></Complete>
         },
       ]
   },
